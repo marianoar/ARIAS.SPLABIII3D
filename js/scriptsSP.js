@@ -63,7 +63,7 @@ function CalculoPromedio(obj) {
 
   const reduce = mapeadoPrecio.reduce((prev, next) => Number(prev) + Number(next));
 
-  return reduce / divisor;
+  return Math.round(reduce / divisor);
 }
 
 function HandlerSubmit(e) {
