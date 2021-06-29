@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio 3 - Segundo Parcial 1C 2021</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- <script src="./js/scripts.js" type="module" defer></script> -->
+  <script src="./js/scriptsSP.js" type="module" defer></script>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+</head>
+
+<body>
+  <header>
+
+    <div id="logo">
+      <h1>PISTEANDO</h1>
+      <p>Como un campeon</p>
+    </div>
+
+    <ul class="nav">
+
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Anuncios</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </header>
+  <main>
+
+    <div class="container">
+
+      <h2>Administración</h2>
+      <div id="fotoFront"><img src="./img/carFront.jpg"> </div>
+      <form id="frm">
+        <fieldset>
+          <legend>Informacion del anuncio</legend>
+          <input type="hidden" name="id">
+          Titulo:
+          <input type="text" name="titulo" placeholder="Titulo" id="txtInput" required>
+          <div id="checkbox">
+            Transaccion:
+            <input type="radio" name="transaccion" value="venta" id="radioInput">Venta
+            <input type="radio" name="transaccion" value="alquiler" id="radioInput" checked>Alquiler
+          </div>
+          Descripcion:
+          <input type="text" name="descripcion" placeholder="Descripcion" id="txtInput" required><br>
+          <div id="items">
+            Precio:
+            <input type="number" name="precio" placeholder="Precio" min="0">
+            Puertas:
+            <input type="number" name="puertas" placeholder="Puertas" min="2" max="5">
+            KMs:
+            <input type="number" name="km" placeholder="KMs" min="0">
+            Potencia:
+            <input type="number" name="potencia" placeholder="Potencia" min="0" max="10000"><br>
+          </div>
+        </fieldset>
+        <div id="container-buttons">
+          <input id="btnSubmit" class="btn-submit" type="submit" value="Guardar">
+
+          <input class="oculto" class="btn-delete" id="btnDelete" type="submit" value="Eliminar">
+        </div>
+      </form>
+
+      <div id="spinner-container"></div>
+
+      <div id=filtos>
+        <form id="frmFiltros">
+          Filtrar por transaccion:<br>
+
+          <select id="selectTransaccion" name="select">
+            <option value="Todos">N/A</option>
+            <option value="alquiler">Alquiler</option>
+            <option value="venta">Venta</option>
+          </select>
+          Precio promedio:
+         <input type="text" id="promedio">
+
+          <div id="boxes">
+            <br>
+            <label>Filtrar por Columnas :</label>
+            <input name="Titulo" type="checkbox" id="box" />Titulo
+            <input name="Transaccion" type="checkbox" id="box"/>Transaccion
+            <input name="Descripcion" type="checkbox" id="box"/>Descripcion
+            <input name="Precio" type="checkbox" id="box"/>Precio
+            <input name="Puertas" type="checkbox" id="box"/>Puertas
+            <input name="Km" type="checkbox" id="box"/>Km
+            <input name="Potencia" type="checkbox" id="box"/>Potencia
+
+          </div>
+        </form>
+      </div>
+
+      <div id="divLista"></div>
+
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Anuncios</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li>Todos los derechos reservados 2021</li>
+    </ul>
+  </footer>
+</body>
+
+</html>

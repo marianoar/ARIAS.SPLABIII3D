@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  margin: 0 auto;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 150px;
+  color: antiquewhite;
+  background-color: rgb(7, 7, 71);
+}
+
+header p {
+  font-style: italic;
+  
+}
+
+#logo{
+  width: 30%;
+  background-image: url("../img/logoCar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.container{
+  margin: 0 auto;
+  display: flex;
+  background-color: gainsboro;
+  flex-direction: column;
+  align-items: center;
+}
+
+#spinner-container{
+  background-color: white;
+}
+
+#btnSubmit{
+color: green;
+}
+
+.btn-submit {
+  background-image: linear-gradient(to right, #03744c 0%, #67c58a  51%, #1D976C  100%)
+}
+
+.btn-submit {
+   margin: 25px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 10px #eee;
+   border-radius: 10px;
+ }
+
+ .btn-submit:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+ 
+ /* .btn-delete {background-image: linear-gradient(to right, #000000 0%, #e74c3c  51%, #000000  100%)}
+ .btn-delete {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  } */
+ 
+#btnDelete{
+  background-color: red;
+  background-image: linear-gradient(to right, #000000 0%, #e74c3c  51%, #000000  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 10px #eee;
+  border-radius: 10px;
+  /* display: block; */
+}
+#btnDelete:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+#frm{
+margin: 10px;
+padding: 10px;
+background-color: blueviolet;
+width: 90%;
+align-items: center;
+display: inline;
+flex-direction: row;
+border-radius: 25px;
+}
+#frm>:first-child{
+  padding: 15px;
+  margin-top: 5px;
+}
+
+#txtInput{
+  width:100%;
+}
+
+#checkbox{
+  display: block;
+  width: 40%;
+
+}
+
+#container-buttons{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+#container-buttons input{
+  margin: 0 auto;
+  height: 35px;
+  width: 125px;
+  border-radius: 10px;
+  padding: 0 15px;
+  border: 0;
+  color:gainsboro;
+}
+
+#container-buttons input:hover{
+  border: 1px solid gray;
+  box-shadow: 0 1px 1px black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#radioInput{
+  display: inline;
+}
+
+#items{
+  margin-top: 5px;
+}
+#items input{
+  width: 100px;
+}
+#divLista{
+  width: 90%;
+}
+table{
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
+  width: 100%;
+}
+
+thead{
+  background-color: blueviolet;
+  text-transform: uppercase;
+}
+
+td{
+  border: 1px solid gray;
+}
+
+.oculto{
+  display: none;
+}
+
+.visible{
+  display:block
+}
+
+.nav{
+
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.nav li{
+  display: inline-block;
+  font-size: 18px;
+  margin: 5px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#fotoFront{
+  width: 100%;
+}
+
+img{
+  width: 100%;
+}
+
+h2{
+  padding: 15px;
+}
+
+footer{
+  background-color: rgb(7, 7, 71);
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+  width: 100%
+}
+
+footer li{
+  display: inline-block;
+  font-size: 18px;
+  margin: 5px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btnStyles{
+  width: 15px;
+  height: 15px;
+  padding-right: 5px;
+}
+
+#filtros{
+  margin: 0 auto;
+  background-color: #67c58a;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#promedio{
+  font-weight: bold;
+  color: rgb(2, 2, 129);
+}
