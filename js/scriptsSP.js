@@ -414,7 +414,6 @@ const getAnuncios = () => {
 const altaAnuncioCar = (obj) => {
 
   const xhr = new XMLHttpRequest();
-  //document.querySelector(".spinner").appendChild(createSpinner());
 
   xhr.onreadystatechange = () => {
 
@@ -430,11 +429,11 @@ const altaAnuncioCar = (obj) => {
       // document.querySelector(".spinner").innerHTML = "";
     } else {
 
-      // document.querySelector(".spinner").appendChild(createSpinner());
+
     }
   };
   xhr.open("POST", "http://localhost:3000/anuncios/");
-  //seteo cabecera MIME types
+  //seteo cabecera 
   xhr.setRequestHeader("Content-Type", "application/json;charset=utf-8")
   xhr.send(JSON.stringify(obj));
 };
@@ -447,9 +446,7 @@ const updateAnuncio = (obj) => {
   xhr.onreadystatechange = () => {
 
     if (xhr.readyState == 4) {
-
       if (xhr.status >= 200 && xhr.status < 299) {
-        //data = JSON.parse(xhr.responseText);
 
       } else {
         const statusText = xhr.statusText || "Ocurrio un error";
@@ -471,7 +468,6 @@ const updateAnuncio = (obj) => {
 const deleteAnuncio = (id) => {
 
   const xhr = new XMLHttpRequest();
-
 
   xhr.onreadystatechange = () => {
 
